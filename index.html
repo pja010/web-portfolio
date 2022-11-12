@@ -22,6 +22,7 @@
     ></script>
 </head>
 <body>
+
 <!--************* TERMINAL ****************-->
 <div class="terminal">
     <div id="screen">
@@ -33,16 +34,30 @@
         <h2 class="prompt">&nbsp<span class="pre-prompt"></span></h2>
         <h2><span class="ls-output"></span></h2>
     </div>
+
     <img
             id="keyboard"
             src="./keybird.png"
     />
+
 </div>
 
 <div class="row no-gutters">
     <div class="col-md-6 no-gutters">
         <!--************* HOME ****************-->
-        <div class="left"></div>
+
+        <div class="left left-home">
+            <img
+                    id="profile"
+                    style="
+            object-position: left top;"
+                    width="50%"
+                    height="auto"
+                    src="https://cdn.glitch.global/d1e95cd4-1438-4e83-94bd-5ffd5f5ceb3c/profile.png?v=1667343829666"
+            />
+<!--            <footer style="text-align: right; margin-top: 94%">&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</footer>-->
+        </div>
+
     </div>
     <div class="col-md-6 no-gutters">
         <div class="right right-home">
@@ -71,13 +86,6 @@
         <div class="left about">
             <!--               <h4 style="font-size: 2em ">----------------------------------------------</h4> -->
             <h1 id="section-about">About me</h1>
-            <!--           <img
-              id="profile"
-              style="float: left"
-              width="50%"
-              height="auto"
-              src="https://cdn.glitch.global/d1e95cd4-1438-4e83-94bd-5ffd5f5ceb3c/profile.png?v=1667343829666"
-            /> -->
 
             <p style="text-align: justify">
                 Hello there! My name is Per. I am from Sweden, but live in the U.S.
@@ -113,12 +121,7 @@
               style="margin: 1.5em 0"
               src="https://cdn.glitch.global/d1e95cd4-1438-4e83-94bd-5ffd5f5ceb3c/WBD_BIG.svg?v=1667972728345"
             /> -->
-            <!--           <img
-              id="profile"
-              width="50%"
-              height="auto"
-              src="https://cdn.glitch.global/d1e95cd4-1438-4e83-94bd-5ffd5f5ceb3c/profile.png?v=1667343829666"
-            /> -->
+
         </div>
         <!--           <h3 stl>--------------------------------------------------------------------------------------------------------------------------</h3> -->
     </div>
@@ -195,7 +198,8 @@
             <div
                     class="media"
                     style="
-              background: #3b71ca;
+              /*background: #3b71ca;*/
+              background: #3054bf;
               color: black;
               padding: 2em;
               box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
@@ -352,7 +356,7 @@
 <div class="row no-gutters">
     <div class="col-md-6 no-gutters contact">
         <div class="left contact contact-inner">
-            <h1 id="section-contact">Contact</h1>
+            <h1 id="section-contact" style="color: #f0ffa3">Contact</h1>
             <p>
                 Thank you for your web-visit!<br />
                 If you'd like to get in touch, I'm one click away.
@@ -436,6 +440,10 @@
         background: #fff;
         padding: 0 3em 0;
     }
+    .left.about {
+        /*background: #e3ff57;*/
+        /*background: #71802b;*/
+    }
     @media screen and (min-width: 768px) {
         .left,
         .right {
@@ -452,6 +460,10 @@
         {
             display: none;
         }
+    }
+
+    .left-home {
+        /*background: #e3ff57;*/
     }
 
     @media screen and (min-width: 750px) {
@@ -481,6 +493,7 @@
 
     }
     .contact {
+        /*background: #3b71ca;*/
         background: #3054bf;
     }
     .contact-inner {
@@ -530,13 +543,27 @@
     @media screen and (min-width: 850px) {
         #screen {
             width: 50em;
-
+        }
+        #profile {
+            left: 35%;
         }
     }
     @media screen and (max-width: 850px) {
         #screen {
             width: 95vw;
-
+        }
+        #profile {
+            left: -12%;
+        }
+    }
+    @media screen and (min-width: 1150px) {
+        #profile {
+            left: 35%;
+        }
+    }
+    @media screen and (max-width: 1150px) {
+        #profile {
+            left: -12%;
         }
     }
     #screen a {
@@ -587,12 +614,16 @@
         display: block;
     }
     #profile {
-        margin: 0 35% auto;
+        margin: 0 15% auto;
+        width: 357px;
+        /*width: 380px;*/
+        height: auto;
         display: block;
         z-index: 3;
         position: absolute;
         top: 51%;
-        left: 35%;
+        /*left: 35%;*/
+        /*left: -12%;*/
     }
     .rotate {
         -ms-writing-mode: tb-rl;
