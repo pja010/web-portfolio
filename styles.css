@@ -1,0 +1,266 @@
+.left,
+.right {
+    height: 100vh;
+    width: 100%;
+}
+.left {
+    background: #f0ffa3;
+    padding: 0 3em 0;
+}
+.right {
+    background: #fff;
+    padding: 0 3em 0;
+}
+@media screen and (min-width: 768px) {
+    .left,
+    .right {
+        height: 100vh;
+    }
+}
+.right-home {
+    display: block;
+}
+
+@media (max-width: 768px)
+{
+    .right-home
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #keyboard {
+        margin: 0 35% auto;
+        display: block;
+    }
+}
+
+
+@media (max-width: 750px) {
+    #keyboard {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        display: block;
+    }
+}
+.work {
+    min-height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.work2 {
+    min-height: 100%;
+    width: 100%;
+
+}
+.contact {
+    background: #3054bf;
+}
+.contact-inner {
+    margin: 1em 0;
+}
+body {
+    /*       font-family: "Courier New", monospace; */
+    font-family:  monospace;
+    color: #000;
+}
+h1 {
+    text-align: justify;
+    font-size: 4.5em;
+    padding-bottom: 1em;
+}
+p {
+    font-size: 1.5em;
+}
+h2 {
+    color: chartreuse;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px green;
+}
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.5em;
+}
+.prompt {
+    font-weight: 100;
+    text-align: left;
+}
+.animate {
+    letter-spacing: 2px;
+}
+#screen {
+    background-color:
+            darkgreen;
+    width: 50em;
+    height: 22em;
+    border: 1rem ridge gray;
+    border-radius: 22px;
+    padding: 20px;
+}
+@media screen and (min-width: 850px) {
+    #screen {
+        width: 50em;
+
+    }
+}
+@media screen and (max-width: 850px) {
+    #screen {
+        width: 95vw;
+
+    }
+}
+#screen a {
+    color: chartreuse;
+}
+
+.menu a {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #3b71ca;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#home:hover {
+    color: #f0ffa3;
+    text-shadow: none;
+}
+#about:hover {
+    color: lightskyblue;
+    text-shadow: none;
+}
+#projects:hover {
+    color: #ff5445;
+    text-shadow: none;
+}
+#contact:hover {
+    color: #3b71ca;
+    text-shadow: none;
+}
+.terminal {
+    position: relative;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#keyboard {
+    margin: 0 35% auto;
+    display: block;
+}
+#profile {
+    margin: 0 35% auto;
+    display: block;
+    z-index: 3;
+    position: absolute;
+    top: 51%;
+    left: 35%;
+}
+.rotate {
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+.float-left {
+    width: 10%;
+    float: left;
+    /*padding: 20px;*/
+    margin-left: -2em;
+}
+.float-right {
+    width: 90%;
+    float: left;
+    /*padding: 20px;*/
+}
+.menu {
+    font-size: 1.2em;
+}
+.left.contact {
+}
+.contact-right li {
+    font-size: 1.5em;
+}
+.contact-right img {
+    width: auto;
+    /*height: 60%;*/
+    float: right;
+}
+#git {
+    width: auto;
+    height: 18em;
+    position: absolute;
+    bottom: 8em;
+    right: 2em;
+}
+#lin {
+    height: 20em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.contact-right ul {
+    font-size: 1.5em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.contact-right a {
+    color: #111;
+    float: inside;
+    align: center;
+}
+.contact-right a:hover {
+    color: royalblue;
+}
+.btn {
+    /*background-color: none;*/
+    border: 2px solid white;
+    padding: 20px 50px;
+    font-weight: bold;
+    font-size: 1.5em;
+    /*         30px; */
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+.btn:after {
+    content: "";
+    position: absolute;
+    background-color: #f0ffa3;
+    top: 8px;
+    left: 8px;
+    right: -8px;
+    bottom: -8px;
+    z-index: -1;
+}
+.btn:hover,
+brutalist-btn:active {
+    color: #000;
+    background-color: #f0ffa3;
+    transition: all 0.3s ease;
+    border: 2px solid #f0ffa3;
+}
+.btn:hover:after,
+brutalist-btn:hover:active {
+    background-color: white;
+    border: 2px solid #f0ffa3;
+    transition: all 0.3s ease;
+}
